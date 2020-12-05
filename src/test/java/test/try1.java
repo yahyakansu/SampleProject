@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,10 +18,12 @@ public class try1 {
 //        opt.addArguments("--disable-notifications");
 //        WebDriver driver = new ChromeDriver(opt);
 
-        WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions opt = new FirefoxOptions();
-        opt.addPreference("dom.webnotifications.enabled",false);
-        WebDriver driver = new FirefoxDriver(opt);
+//        WebDriverManager.firefoxdriver().setup();
+//        FirefoxOptions opt = new FirefoxOptions();
+//        opt.addPreference("dom.webnotifications.enabled",false);
+//        WebDriver driver = new FirefoxDriver(opt);
+
+        WebDriver driver = Driver.getDriver();
 
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
