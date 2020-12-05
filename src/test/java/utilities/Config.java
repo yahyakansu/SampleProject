@@ -5,19 +5,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class Config {
-    private static String path="";
+    private static String path="configuration.properties";
     private static Properties properties = new Properties();
-
-    static{
+    static {
         try {
-            FileInputStream input = new FileInputStream(path);
-            properties.load(input);
-            input.close();
+            FileInputStream inputStream = new FileInputStream(path);
+            properties.load(inputStream);
+            inputStream.close();
         }catch (IOException e){
             e.printStackTrace();
         }
     }
-
     public static String getProperties(String key){
         return properties.getProperty(key);
     }
