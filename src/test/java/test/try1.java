@@ -24,15 +24,10 @@ public class try1 {
 //        WebDriver driver = new FirefoxDriver(opt);
 
         WebDriver driver = Driver.getDriver();
-
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         driver.get("https://uenjoy.com/");
-//        Actions actions = new Actions(driver);
-//        actions.moveToElement(driver.findElement(By.linkText("Uenjoy Ride-ons")));
-//        actions.moveToElement(driver.findElement(By.partialLinkText("Racer"))).click();
+
         Thread.sleep(1000);
-        driver.close();
+//        driver.close();
+        Driver.closeDriver();
     }
 }
