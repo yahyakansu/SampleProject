@@ -67,11 +67,13 @@ public class topButtonRideOns {
 
     @When("User click to the Two Seat button")
     public void user_click_to_the_two_seat_button() {
-
+        homePage.twoSeatButton.click();
     }
 
     @Then("User should see the new page that releated Two Seat")
     public void user_should_see_the_new_page_that_releated_two_seat() {
-
+        String expectedTitle="Two Seat – Uenjoy";
+        String actualTitle=driver.getTitle();
+        Assert.assertEquals(expectedTitle,actualTitle);
     }
 }
