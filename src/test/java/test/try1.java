@@ -3,10 +3,13 @@ package test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -26,8 +29,13 @@ public class try1 {
         WebDriver driver = Driver.getDriver();
         driver.get("https://uenjoy.com/");
 
-        Thread.sleep(1000);
-//        driver.close();
+        Actions actions = new Actions(driver);
+        actions.moveToElement(driver.findElement(By.partialLinkText("Uenjoy Ride-ons"))).perform();
+
+        driver.findElement(By.partialLinkText("Racer")).click();
+
+        Thread.sleep(2000);
+
         Driver.closeDriver();
     }
 }

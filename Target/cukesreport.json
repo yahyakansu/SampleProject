@@ -1,0 +1,268 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "User is already use Uenjoy website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on the Uenjoy website",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-06T07:09:00.725Z",
+        "line": 7,
+        "name": "Ride-ons dropdown button verification",
+        "description": "",
+        "id": "top-button-functionalities;ride-ons-dropdown-button-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 327000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User click to the Ride-ons button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User should see the new page that releated Ride-ons",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ride-ons"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already use Uenjoy website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on the Uenjoy website",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-06T07:09:00.898Z",
+        "line": 11,
+        "name": "Racer dropdown button verification",
+        "description": "",
+        "id": "top-button-functionalities;racer-dropdown-button-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 203000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "User move to the Ride-ons button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 185000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User click to the Racer button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User should see the new page that releated Racer",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ride-ons"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already use Uenjoy website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on the Uenjoy website",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-06T07:09:00.920Z",
+        "line": 16,
+        "name": "Explorer dropdown button verification",
+        "description": "",
+        "id": "top-button-functionalities;explorer-dropdown-button-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 204000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User move to the Ride-ons button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 159000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User click to the Explorer button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 159000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User should see the new page that releated Explorer",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ride-ons"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "User is already use Uenjoy website",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "User is on the Uenjoy website",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-06T07:09:00.948Z",
+        "line": 21,
+        "name": "Two Seat dropdown button verification",
+        "description": "",
+        "id": "top-button-functionalities;two-seat-dropdown-button-verification",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 170000,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "User move to the Ride-ons button",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 226000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User click to the Two Seat button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 155000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "User should see the new page that releated Two Seat",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Ride-ons"
+          }
+        ]
+      }
+    ],
+    "name": "Top button functionalities",
+    "description": "",
+    "id": "top-button-functionalities",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/topButtonFunctionalities.feature",
+    "tags": [
+      {
+        "name": "@Ride-ons",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

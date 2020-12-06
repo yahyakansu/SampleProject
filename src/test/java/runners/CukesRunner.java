@@ -8,14 +8,14 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         plugin = {"html:target/cucumber-reports","json:target/cukesreport.json"},
-        features = {"src/java/resources/features"},
-        glue = {"stepDefs"},
+        features = "src/test/resources/features",
+        glue = "stepDefs",
         dryRun = true,
-        tags = ""
+        tags = "@Ride-ons"
 )
 public class CukesRunner {
     @AfterClass
     public static void tearDown(){
-//        ExtendReport.endReport();
+//        ExtentReport.endReport();
     }
 }
