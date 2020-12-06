@@ -1,9 +1,9 @@
-
+@Ride-ons
 Feature: Top button functionalities
 
   Background: User is already use Uenjoy website
     Given User is on the Uenjoy website
-  @Ride-ons
+
   Scenario: Ride-ons dropdown button verification
     When User click to the Ride-ons button
     Then User should see the new page that releated Ride-ons

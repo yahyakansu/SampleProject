@@ -11,17 +11,20 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 1725000,
+              "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T07:09:00.725Z",
+        "start_timestamp": "2020-12-06T22:08:12.620Z",
         "line": 7,
         "name": "Ride-ons dropdown button verification",
         "description": "",
@@ -31,22 +34,26 @@
         "steps": [
           {
             "result": {
-              "duration": 327000,
-              "status": "skipped"
+              "duration": 234000,
+              "status": "passed"
             },
             "line": 8,
             "name": "User click to the Ride-ons button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_click_to_the_ride_ons_button()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 183000,
-              "status": "skipped"
+              "duration": 240000,
+              "status": "passed"
             },
             "line": 9,
             "name": "User should see the new page that releated Ride-ons",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_ride_ons()"
+            },
             "keyword": "Then "
           }
         ],
@@ -65,17 +72,20 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 273000,
+              "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T07:09:00.898Z",
+        "start_timestamp": "2020-12-06T22:08:12.713Z",
         "line": 11,
         "name": "Racer dropdown button verification",
         "description": "",
@@ -85,32 +95,38 @@
         "steps": [
           {
             "result": {
-              "duration": 203000,
-              "status": "skipped"
+              "duration": 199000,
+              "status": "passed"
             },
             "line": 12,
             "name": "User move to the Ride-ons button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 185000,
-              "status": "skipped"
+              "duration": 183000,
+              "status": "passed"
             },
             "line": 13,
             "name": "User click to the Racer button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_click_to_the_racer_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 179000,
-              "status": "skipped"
+              "duration": 189000,
+              "status": "passed"
             },
             "line": 14,
             "name": "User should see the new page that releated Racer",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_racer()"
+            },
             "keyword": "Then "
           }
         ],
@@ -129,17 +145,20 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 690000,
+              "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T07:09:00.920Z",
+        "start_timestamp": "2020-12-06T22:08:12.728Z",
         "line": 16,
         "name": "Explorer dropdown button verification",
         "description": "",
@@ -149,32 +168,38 @@
         "steps": [
           {
             "result": {
-              "duration": 204000,
-              "status": "skipped"
+              "duration": 334000,
+              "status": "passed"
             },
             "line": 17,
             "name": "User move to the Ride-ons button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 159000,
-              "status": "skipped"
+              "duration": 184000,
+              "status": "passed"
             },
             "line": 18,
             "name": "User click to the Explorer button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_click_to_the_explorer_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 159000,
-              "status": "skipped"
+              "duration": 180000,
+              "status": "passed"
             },
             "line": 19,
             "name": "User should see the new page that releated Explorer",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_explorer()"
+            },
             "keyword": "Then "
           }
         ],
@@ -193,17 +218,20 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 261000,
+              "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+            },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T07:09:00.948Z",
+        "start_timestamp": "2020-12-06T22:08:12.752Z",
         "line": 21,
         "name": "Two Seat dropdown button verification",
         "description": "",
@@ -213,32 +241,38 @@
         "steps": [
           {
             "result": {
-              "duration": 170000,
-              "status": "skipped"
+              "duration": 153000,
+              "status": "passed"
             },
             "line": 22,
             "name": "User move to the Ride-ons button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 226000,
-              "status": "skipped"
+              "duration": 143000,
+              "status": "passed"
             },
             "line": 23,
             "name": "User click to the Two Seat button",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_click_to_the_two_seat_button()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 155000,
-              "status": "skipped"
+              "duration": 97000,
+              "status": "passed"
             },
             "line": 24,
             "name": "User should see the new page that releated Two Seat",
-            "match": {},
+            "match": {
+              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_two_seat()"
+            },
             "keyword": "Then "
           }
         ],
