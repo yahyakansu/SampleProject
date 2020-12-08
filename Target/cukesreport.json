@@ -11,48 +11,69 @@
         "steps": [
           {
             "result": {
-              "duration": 4134691000,
+              "duration": 6163129236,
               "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+              "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T22:57:27.435Z",
+        "before": [
+          {
+            "result": {
+              "duration": 225478112,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
         "line": 7,
         "name": "Ride-ons dropdown button verification",
         "description": "",
         "id": "top-button-functionalities;ride-ons-dropdown-button-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 101472307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1307095000,
+              "duration": 1693353400,
               "status": "passed"
             },
             "line": 8,
             "name": "User click to the Ride-ons button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_click_to_the_ride_ons_button()"
+              "location": "topButtonRideOns.user_click_to_the_ride_ons_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6477000,
+              "duration": 9731308,
               "status": "passed"
             },
             "line": 9,
-            "name": "User should see the new page that releated Ride-ons",
+            "name": "User should see the new page that related to Ride-ons",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_ride_ons()"
+              "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_ride_ons()"
             },
             "keyword": "Then "
           }
@@ -60,6 +81,9 @@
         "tags": [
           {
             "name": "@Ride-ons"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       },
@@ -72,60 +96,81 @@
         "steps": [
           {
             "result": {
-              "duration": 787216000,
+              "duration": 5395870923,
               "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+              "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T22:57:32.987Z",
+        "before": [
+          {
+            "result": {
+              "duration": 183118,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
         "line": 11,
         "name": "Racer dropdown button verification",
         "description": "",
         "id": "top-button-functionalities;racer-dropdown-button-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 99886191,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 151519000,
+              "duration": 150760680,
               "status": "passed"
             },
             "line": 12,
             "name": "User move to the Ride-ons button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+              "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 925661000,
+              "duration": 1970737026,
               "status": "passed"
             },
             "line": 13,
             "name": "User click to the Racer button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_click_to_the_racer_button()"
+              "location": "topButtonRideOns.user_click_to_the_racer_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5377000,
+              "duration": 6442647,
               "status": "passed"
             },
             "line": 14,
-            "name": "User should see the new page that releated Racer",
+            "name": "User should see the new page that related to Racer",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_racer()"
+              "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_racer()"
             },
             "keyword": "Then "
           }
@@ -133,6 +178,9 @@
         "tags": [
           {
             "name": "@Ride-ons"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       },
@@ -145,60 +193,81 @@
         "steps": [
           {
             "result": {
-              "duration": 522394000,
+              "duration": 2927134417,
               "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+              "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T22:57:34.865Z",
+        "before": [
+          {
+            "result": {
+              "duration": 143993,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
         "line": 16,
         "name": "Explorer dropdown button verification",
         "description": "",
         "id": "top-button-functionalities;explorer-dropdown-button-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 122810569,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 153678000,
+              "duration": 159464477,
               "status": "passed"
             },
             "line": 17,
             "name": "User move to the Ride-ons button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+              "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 837885000,
+              "duration": 1277449507,
               "status": "passed"
             },
             "line": 18,
             "name": "User click to the Explorer button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_click_to_the_explorer_button()"
+              "location": "topButtonRideOns.user_click_to_the_explorer_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5982000,
+              "duration": 14047786,
               "status": "passed"
             },
             "line": 19,
-            "name": "User should see the new page that releated Explorer",
+            "name": "User should see the new page that related to Explorer",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_explorer()"
+              "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_explorer()"
             },
             "keyword": "Then "
           }
@@ -206,6 +275,9 @@
         "tags": [
           {
             "name": "@Ride-ons"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       },
@@ -218,60 +290,81 @@
         "steps": [
           {
             "result": {
-              "duration": 520293000,
+              "duration": 4076824363,
               "status": "passed"
             },
             "line": 5,
             "name": "User is on the Uenjoy website",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_is_on_the_uenjoy_website()"
+              "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
             },
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-06T22:57:36.393Z",
+        "before": [
+          {
+            "result": {
+              "duration": 195346,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
         "line": 21,
         "name": "Two Seat dropdown button verification",
         "description": "",
         "id": "top-button-functionalities;two-seat-dropdown-button-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 98580362,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 149927000,
+              "duration": 148874889,
               "status": "passed"
             },
             "line": 22,
             "name": "User move to the Ride-ons button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_move_to_the_ride_ons_button()"
+              "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 782629000,
+              "duration": 2814310730,
               "status": "passed"
             },
             "line": 23,
             "name": "User click to the Two Seat button",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_click_to_the_two_seat_button()"
+              "location": "topButtonRideOns.user_click_to_the_two_seat_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4563000,
+              "duration": 3719296,
               "status": "passed"
             },
             "line": 24,
-            "name": "User should see the new page that releated Two Seat",
+            "name": "User should see the new page that related to Two Seat",
             "match": {
-              "location": "stepDefs.topButtonRideOns.user_should_see_the_new_page_that_releated_two_seat()"
+              "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_two_seat()"
             },
             "keyword": "Then "
           }
@@ -279,6 +372,9 @@
         "tags": [
           {
             "name": "@Ride-ons"
+          },
+          {
+            "name": "@Regression"
           }
         ]
       }
@@ -287,7 +383,7 @@
     "description": "",
     "id": "top-button-functionalities",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/topButtonFunctionalities.feature",
+    "uri": "src/test/resources/features/topButtonFunctionalities.feature",
     "tags": [
       {
         "name": "@Ride-ons",
@@ -295,6 +391,14 @@
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 11
         }
       }
     ]
