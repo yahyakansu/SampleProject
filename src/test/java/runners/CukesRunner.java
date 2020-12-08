@@ -1,10 +1,10 @@
 package runners;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
 import org.junit.AfterClass;
 import org.junit.runner.RunWith;
-import utilities.Driver;
+import utilities.ExtentReport;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -17,7 +17,6 @@ import utilities.Driver;
 public class CukesRunner {
     @AfterClass
     public static void tearDown(){
-//        ExtentReport.endReport();
-        Driver.closeDriver();
+        ExtentReport.endReport();
     }
 }

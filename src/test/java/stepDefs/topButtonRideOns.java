@@ -1,11 +1,11 @@
 package stepDefs;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.HomePage;
 import utilities.Config;
@@ -13,7 +13,6 @@ import utilities.Driver;
 
 public class topButtonRideOns {
     WebDriver driver;
-    WebElement element;
     Actions actions;
     HomePage homePage;
 
@@ -29,8 +28,9 @@ public class topButtonRideOns {
     public void user_click_to_the_ride_ons_button() {
         homePage.rideOnsButton.click();
     }
-    @Then("User should see the new page that releated Ride-ons")
-    public void user_should_see_the_new_page_that_releated_ride_ons() {
+
+    @Then("User should see the new page that related to Ride-ons")
+    public void user_should_see_the_new_page_that_related_to_ride_ons() {
         String expectedTitle="Ride On Cars – Uenjoy";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
@@ -46,8 +46,8 @@ public class topButtonRideOns {
         homePage.racerButton.click();
     }
 
-    @Then("User should see the new page that releated Racer")
-    public void user_should_see_the_new_page_that_releated_racer() {
+    @Then("User should see the new page that related to Racer")
+    public void user_should_see_the_new_page_that_related_to_racer() {
         String expectedTitle="Racer – Uenjoy";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
@@ -58,8 +58,8 @@ public class topButtonRideOns {
         homePage.explorerButton.click();
     }
 
-    @Then("User should see the new page that releated Explorer")
-    public void user_should_see_the_new_page_that_releated_explorer() {
+    @Then("User should see the new page that related to Explorer")
+    public void user_should_see_the_new_page_that_related_to_explorer() {
         String expectedTitle="Explorer – Uenjoy";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
@@ -70,8 +70,8 @@ public class topButtonRideOns {
         homePage.twoSeatButton.click();
     }
 
-    @Then("User should see the new page that releated Two Seat")
-    public void user_should_see_the_new_page_that_releated_two_seat() {
+    @Then("User should see the new page that related to Two Seat")
+    public void user_should_see_the_new_page_that_related_to_two_seat() {
         String expectedTitle="Two Seat – Uenjoy";
         String actualTitle=driver.getTitle();
         Assert.assertEquals(expectedTitle,actualTitle);
