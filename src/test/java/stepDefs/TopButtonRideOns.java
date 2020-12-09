@@ -11,7 +11,7 @@ import pages.HomePage;
 import utilities.Config;
 import utilities.Driver;
 
-public class topButtonRideOns {
+public class TopButtonRideOns {
     WebDriver driver;
     Actions actions;
     HomePage homePage;

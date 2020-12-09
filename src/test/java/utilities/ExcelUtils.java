@@ -48,6 +48,12 @@ public class ExcelUtils {
         }
     }
 
+    /***
+     * write to excel
+     * @param rowNum
+     * @param cellNum
+     * @param value
+     */
     public static void setCellValue(int rowNum,int cellNum,String value){
         try {
             row = sheet.getRow(rowNum);
@@ -65,6 +71,15 @@ public class ExcelUtils {
             outputStream.close();
         }catch (Exception e){
             e.printStackTrace();
+        }
+    }
+
+    public static int getRowsNum(){
+        try {
+            return sheet.getPhysicalNumberOfRows();
+        }catch (Exception e){
+            e.printStackTrace();
+            return 0;
         }
     }
 }

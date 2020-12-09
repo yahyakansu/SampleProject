@@ -1,21 +1,29 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/topButtonFunctionalities.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/features/listAllProducts.feature");
 formatter.feature({
-  "name": "Top button functionalities",
+  "name": "Products will be listed",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Ride-ons"
+      "name": "@AllProducts"
     },
     {
       "name": "@Regression"
     }
   ]
 });
-formatter.background({
-  "name": "User is already use Uenjoy website",
+formatter.scenario({
+  "name": "Whole product in the website will be listed",
   "description": "",
-  "keyword": "Background"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@AllProducts"
+    },
+    {
+      "name": "@Regression"
+    }
+  ]
 });
 formatter.before({
   "status": "passed"
@@ -25,232 +33,27 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
+  "location": "TopButtonRideOns.user_is_on_the_uenjoy_website()"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Ride-ons dropdown button verification",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Ride-ons"
-    },
-    {
-      "name": "@Regression"
-    }
-  ]
-});
 formatter.step({
-  "name": "User click to the Ride-ons button",
+  "name": "User click to the All Collections button",
   "keyword": "When "
 });
 formatter.match({
-  "location": "topButtonRideOns.user_click_to_the_ride_ons_button()"
+  "location": "ListAllProducts.user_click_to_the_All_Collections_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User should see the new page that related to Ride-ons",
+  "name": "User should see the new page that related to All Collection",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_ride_ons()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User is already use Uenjoy website",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the Uenjoy website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Racer dropdown button verification",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Ride-ons"
-    },
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.step({
-  "name": "User move to the Ride-ons button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click to the Racer button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_click_to_the_racer_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see the new page that related to Racer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_racer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User is already use Uenjoy website",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the Uenjoy website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Explorer dropdown button verification",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Ride-ons"
-    },
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.step({
-  "name": "User move to the Ride-ons button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click to the Explorer button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_click_to_the_explorer_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see the new page that related to Explorer",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_explorer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "User is already use Uenjoy website",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User is on the Uenjoy website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_is_on_the_uenjoy_website()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Two Seat dropdown button verification",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@Ride-ons"
-    },
-    {
-      "name": "@Regression"
-    }
-  ]
-});
-formatter.step({
-  "name": "User move to the Ride-ons button",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_move_to_the_ride_ons_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User click to the Two Seat button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_click_to_the_two_seat_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "User should see the new page that related to Two Seat",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "topButtonRideOns.user_should_see_the_new_page_that_related_to_two_seat()"
+  "location": "ListAllProducts.user_should_see_the_new_page_that_related_to_All_Collection()"
 });
 formatter.result({
   "status": "passed"

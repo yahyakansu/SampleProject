@@ -21,4 +21,7 @@ public class HomePage {
 
     @FindBy(partialLinkText = "Two Seat")
     public WebElement twoSeatButton;
+
+    @FindBy(partialLinkText = "All Collection")
+    public WebElement allCollectionButton;
 }
