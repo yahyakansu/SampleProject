@@ -1,4 +1,4 @@
-package DDTexcel;
+package DDT_excel;
 
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -16,6 +16,7 @@ public class ExcelRead {
         XSSFSheet sheet = workbook.getSheet("Sheet1");
 
         int usedRows=sheet.getPhysicalNumberOfRows();
+
         for (int i=0;i<usedRows;i++){
             int usedCells=sheet.getRow(i).getPhysicalNumberOfCells();
             for (int j=0;j<usedCells;j++){
