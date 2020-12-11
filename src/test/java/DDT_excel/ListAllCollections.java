@@ -36,12 +36,14 @@ public class ListAllCollections {
         int itemCounts=Integer.parseInt(c);
         int turn=itemCounts/12-1;
 
-//        List<WebElement> products=driver.findElements(By.xpath("//span[@class='grid-product__title']"));
+        List<String> products= new ArrayList<>();
         List<String> prices = new ArrayList<>();
 
         for (int i=0;i<turn;i++){
             for (int j=1;j<=12;j++){
+                String product=driver.findElement(By.xpath("(//span[@class='grid-product__title'])["+j+"]")).getText();
                 String price=driver.findElement(By.xpath("(//span[@class='grid-product__price'])["+j+"]")).getText();
+                products.add(product);
                 prices.add(price);
             }
             WebElement rightClick= driver.findElement(By.xpath("//span[@class='icon icon-arrow-right']"));
@@ -50,6 +52,9 @@ public class ListAllCollections {
         }
 
         for (String e:prices) {
+            System.out.println(e);
+        }
+        for (String e:products){
             System.out.println(e);
         }
 
