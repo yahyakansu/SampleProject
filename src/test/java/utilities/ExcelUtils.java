@@ -6,7 +6,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 public class ExcelUtils {
@@ -25,9 +24,9 @@ public class ExcelUtils {
         excelPath=path;
         try {
             FileInputStream inputStream = new FileInputStream(excelPath);
-            workbook = new XSSFWorkbook();
+            workbook = new XSSFWorkbook(inputStream);
             sheet = workbook.getSheet(sheetName);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -56,14 +55,11 @@ public class ExcelUtils {
      */
     public static void setCellValue(int rowNum,int cellNum,String value){
         try {
-            row = sheet.getRow(rowNum);
-            if (row==null){
+            if (sheet.getRow(rowNum)==null){
                 sheet.createRow(rowNum);
             }
-            cell = row.getCell(cellNum);
-            if (cell==null){
-                row.createCell(cellNum);
-            }
+            sheet.getRow(rowNum).createCell(cellNum);
+            cell = sheet.getRow(rowNum).getCell(cellNum);
             cell.setCellValue(value);
 
             FileOutputStream outputStream = new FileOutputStream(excelPath);
