@@ -34,53 +34,31 @@ public class ListAllCollections {
         String[] b=a.split(" ");
         String c=b[0];
         int itemCounts=Integer.parseInt(c);
-        int turn=itemCounts/12-1;
+        int turn=itemCounts/12;
 
         List<String> products= new ArrayList<>();
         List<String> prices = new ArrayList<>();
 
+        ExcelUtils.openExcelFile("src/Sample.xlsx","Sheet3");
+        ExcelUtils.setCellValue(0,0,"PRODUCTS");
+        ExcelUtils.setCellValue(0,1,"PRICES");
+
+
+        int y=0;
         for (int i=0;i<turn;i++){
             for (int j=1;j<=12;j++){
                 String product=driver.findElement(By.xpath("(//span[@class='grid-product__title'])["+j+"]")).getText();
+                ExcelUtils.setCellValue((j+y),0,product);
                 String price=driver.findElement(By.xpath("(//span[@class='grid-product__price'])["+j+"]")).getText();
+                ExcelUtils.setCellValue((j+y),1,price);
                 products.add(product);
                 prices.add(price);
             }
             WebElement rightClick= driver.findElement(By.xpath("//span[@class='icon icon-arrow-right']"));
             ((JavascriptExecutor)driver).executeScript("arguments[0].click()", rightClick);
-            System.out.println(i);
+            y=y+12;
         }
-
-        for (String e:prices) {
-            System.out.println(e);
-        }
-        for (String e:products){
-            System.out.println(e);
-        }
-
     }
-    public static Boolean isVisibleInViewport(WebElement element) {
-        WebDriver driver = ((RemoteWebElement)element).getWrappedDriver();
-
-        return (Boolean)((JavascriptExecutor)driver).executeScript(
-                "var elem = arguments[0], " +
-                        "box = elem.getBoundingClientRect()," +
-                        "cx = box.left + box.width / 2, " +
-                        "cy = box.top + box.height / 2, " +
-                        "e = document.elementFromPoint(cx, cy); " +
-                        "for (; e; e = e.parentElement) { " +
-                        "if (e === elem) return true;}return false;", element);
-    }
-
-    @Test
-    public void sds(){
-        ExcelUtils.openExcelFile("src/Sample.xlsx","Sheet3");
-
-        ExcelUtils.setCellValue(0,0,"PRODUCTS");
-        ExcelUtils.setCellValue(0,1,"PRICES");
-
-    }
-
 
     @AfterTest
     public void tearDown(){
