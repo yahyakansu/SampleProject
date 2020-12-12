@@ -24,4 +24,7 @@ public class HomePage {
 
     @FindBy(partialLinkText = "All Collection")
     public WebElement allCollectionButton;
+
+    @FindBy(xpath = "//span[@class='icon icon-user']")
+    public WebElement login;
 }

@@ -33,7 +33,7 @@ public class TopButtonRideOns {
     public void user_should_see_the_new_page_that_related_to_ride_ons() {
         String expectedTitle="Ride On Cars – Uenjoy";
         String actualTitle=driver.getTitle();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertEquals("Title is NOT equal with expected title",expectedTitle,actualTitle);
     }
 
     @When("User move to the Ride-ons button")
@@ -50,7 +50,7 @@ public class TopButtonRideOns {
     public void user_should_see_the_new_page_that_related_to_racer() {
         String expectedTitle="Racer – Uenjoy";
         String actualTitle=driver.getTitle();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertEquals("Title is NOT equal with expected title",expectedTitle,actualTitle);
     }
 
     @When("User click to the Explorer button")
@@ -62,7 +62,7 @@ public class TopButtonRideOns {
     public void user_should_see_the_new_page_that_related_to_explorer() {
         String expectedTitle="Explorer – Uenjoy";
         String actualTitle=driver.getTitle();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertEquals("Title is NOT equal with expected title",expectedTitle,actualTitle);
     }
 
     @When("User click to the Two Seat button")

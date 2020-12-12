@@ -20,6 +20,6 @@ public class ListAllProducts {
     public void user_should_see_the_new_page_that_related_to_All_Collection() {
         String expectedTitle="Products – Uenjoy";
         String actualTitle=driver.getTitle();
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertEquals("Title is NOT equal with expected title",expectedTitle,actualTitle);
     }
 }
