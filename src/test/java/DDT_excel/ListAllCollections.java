@@ -23,6 +23,7 @@ public class ListAllCollections {
     @BeforeTest
     public void setUp(){
         driver.get(Config.getProperties("uenjoyURL"));
+        driver.findElement(By.xpath("//button[@class='icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left']")).click();
         driver.findElement(By.partialLinkText("All Collection")).click();
     }
 

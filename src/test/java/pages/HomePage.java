@@ -10,6 +10,9 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+    @FindBy(xpath = "//button[@class='icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left']")
+    public WebElement mainButton;
+
     @FindBy(partialLinkText = "Ride-ons")
     public WebElement rideOnsButton;
 
