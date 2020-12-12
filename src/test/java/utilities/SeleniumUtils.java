@@ -23,4 +23,9 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),seconds);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+
+    public static void waitForClickable(WebElement element,int seconds){
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(),seconds);
+        wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
 }
