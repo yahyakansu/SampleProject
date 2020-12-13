@@ -19,4 +19,6 @@ public class AccountPage {
     @FindBy(linkText = "Create Account")
     public WebElement createAccount;
 
+    @FindBy(xpath = "(//input[@type='submit'])[1]")
+    public WebElement signIn;
 }

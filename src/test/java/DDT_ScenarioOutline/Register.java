@@ -2,6 +2,7 @@ package DDT_ScenarioOutline;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -21,12 +22,12 @@ public class Register {
     @BeforeTest
     public void setUp(){
         driver= Driver.getDriver();
+        driver.get(Config.getProperties("uenjoyURL"));
+        homePage.login.click();
     }
 
     @Test
     public void createAccount(){
-        driver.get(Config.getProperties("uenjoyURL"));
-        homePage.login.click();
         accountPage.createAccount.click();
 
         String firstName = faker.name().firstName();
@@ -49,6 +50,17 @@ public class Register {
 //        Mann
 //        isdfw01@gmail.com
 //        wp4kt6301
+    }
+
+    @Test
+    public void accountVerification(){
+        accountPage.email.sendKeys("isdfw01@gmail.com");
+        accountPage.password.sendKeys("wp4kt6301");
+        accountPage.signIn.click();
+
+        String actualTitle = driver.getTitle();
+        String expectedTitle ="Account – Uenjoy";
+        Assert.assertEquals(actualTitle,expectedTitle);
     }
 
     @AfterTest
