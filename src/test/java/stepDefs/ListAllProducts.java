@@ -13,6 +13,7 @@ public class ListAllProducts {
     @When("User click to the All Collections button")
     public void user_click_to_the_All_Collections_button() {
         HomePage homePage = new HomePage();
+        homePage.mainButton.click();
         homePage.allCollectionButton.click();
     }
 
