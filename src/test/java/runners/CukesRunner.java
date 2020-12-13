@@ -12,7 +12,7 @@ import utilities.ExtentReport;
         features = "src/test/resources/features",
         glue = "stepDefs",
         dryRun = false,
-        tags = "@AllProducts"
+        tags = "@newAccounts"
 )
 public class CukesRunner {
     @AfterClass

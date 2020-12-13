@@ -1,4 +1,4 @@
-package DDT_ScenarioOutline;
+package javaFaker;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
