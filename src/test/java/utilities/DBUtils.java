@@ -1,11 +1,7 @@
 package utilities;
 
-import com.mysql.cj.protocol.Resultset;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DBUtils {
@@ -19,7 +15,7 @@ public class DBUtils {
 
     static Connection connection=null;
     static Statement statement=null;
-    static Resultset resultSet=null;
+    static ResultSet resultSet;
 
     public enum DbType{
         MySQl,Oracle
@@ -50,5 +46,31 @@ public class DBUtils {
         }
     }
 
-//    public static List<String>
+    public static List<String[]> runQuery(String sql){
+        List<String[]> queryResults = new ArrayList<>();
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+            resultSet = statement.executeQuery(sql);
+
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            int columnsCount = metaData.getColumnCount();
+            resultSet.last();
+            int recordCount = resultSet.getRow();
+            if(columnsCount==0||recordCount==0){
+                return null;
+            }
+            resultSet.beforeFirst();
+
+            while (resultSet.next()){
+                String[] cellData= new String[columnsCount];
+                for (int i=0; i<columnsCount; i++){
+                    cellData[i]=resultSet.getString(i+1);
+                }
+                queryResults.add(cellData);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        return queryResults;
+    }
 }
