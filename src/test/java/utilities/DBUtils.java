@@ -39,6 +39,7 @@ public class DBUtils {
 
     public static void closeConnection(){
         try {
+            if (resultSet!=null)resultSet.close();
             if (statement!=null)statement.close();
             if (connection!=null)connection.close();
         }catch (Exception e){
