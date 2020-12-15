@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DBUtils {
+    private DBUtils(){}
     private static String URL = "jdbc:mysql://localhost:3306/hr?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static String DBUserName = "root";
     private static String DBPassword = "root";
