@@ -11,5 +11,6 @@ public class Test {
 
         response = RestAssured.get("http://100.26.130.128:8000/api/spartans/search");
         System.out.println(response.asString());
+
     }
 }
