@@ -15,7 +15,7 @@ public class ExtentReport {
         configs.config().setDocumentTitle("Extend Report");
         reports = new ExtentReports();
         reports.attachReporter(configs);
-        reports.setSystemInfo("usernanme","yahya");
+        reports.setSystemInfo("username","yahya");
         reports.setSystemInfo("environment","QA");
     }
 

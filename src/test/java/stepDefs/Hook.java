@@ -9,7 +9,7 @@ import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 import utilities.ExtentReport;
 
-public class Hooks {
+public class Hook {
     @Before
     public void setup(Scenario scenario){
         ExtentReport.startTest(scenario.getName());
