@@ -28,4 +28,15 @@ public class SeleniumUtils {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(),seconds);
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
+
+    public static void switchTab(String url) {
+        String defaultTab=Driver.getDriver().getWindowHandle();
+        for(String windowHandle:Driver.getDriver().getWindowHandles()) {
+            Driver.getDriver().switchTo().window(windowHandle);
+            if(Driver.getDriver().getCurrentUrl().contains(url)) {
+                return;
+            }
+        }
+        Driver.getDriver().switchTo().window(defaultTab);
+    }
 }
