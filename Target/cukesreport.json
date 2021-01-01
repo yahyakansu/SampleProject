@@ -1,40 +1,40 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 202571404,
+              "duration": 303957051,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.setup(Scenario)"
+              "location": "Hook.setup(Scenario)"
             }
           }
         ],
-        "line": 14,
-        "name": "Uenjoy accounts verification",
+        "line": 4,
+        "name": "Whole product in the website will be listed",
         "description": "",
-        "id": "scenario-outline-functionalities;uenjoy-accounts-verification;table-for-the-verification;2",
+        "id": "products-will-be-listed;whole-product-in-the-website-will-be-listed",
         "after": [
           {
             "result": {
-              "duration": 112459753,
+              "duration": 159452454,
               "status": "passed"
             },
             "match": {
-              "location": "Hooks.tearDown(Scenario)"
+              "location": "Hook.tearDown(Scenario)"
             }
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4941001641,
+              "duration": 5352778181,
               "status": "passed"
             },
             "line": 5,
@@ -46,573 +46,61 @@
           },
           {
             "result": {
-              "duration": 924176460,
+              "duration": 1514395083,
               "status": "passed"
             },
             "line": 6,
-            "name": "User clicks to the account button",
+            "name": "User click to the All Collections button",
             "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_account_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 140019798,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User writes own \"isdfw01@gmail.com\" to the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"isdfw01@gmail.com\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_email_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 68586757,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User writes own \"wp4kt6301\" to the password box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wp4kt6301\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_password_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1182227059,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks to the sign in button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_sign_in_button()"
+              "location": "ListAllProducts.user_click_to_the_All_Collections_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 12200355,
+              "duration": 10422802,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User should see the own account page",
+            "line": 7,
+            "name": "User should see the new page that related to All Collection",
             "match": {
-              "location": "VerificationForSOutline.user_should_see_the_own_account_page()"
+              "location": "ListAllProducts.user_should_see_the_new_page_that_related_to_All_Collection()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@newAccounts"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 203702,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "Uenjoy accounts verification",
-        "description": "",
-        "id": "scenario-outline-functionalities;uenjoy-accounts-verification;table-for-the-verification;3",
-        "after": [
-          {
-            "result": {
-              "duration": 94694969,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3298116953,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on the Uenjoy website",
-            "match": {
-              "location": "TopButtonRideOns.user_is_on_the_uenjoy_website()"
-            },
-            "keyword": "Given "
+            "name": "@AllProducts"
           },
           {
-            "result": {
-              "duration": 854187480,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks to the account button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_account_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 123928369,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User writes own \"wmjpj55@gmail.com\" to the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"wmjpj55@gmail.com\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_email_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 45970951,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User writes own \"fd5ns6828\" to the password box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"fd5ns6828\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_password_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 65089676,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks to the sign in button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3993188,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should see the own account page",
-            "match": {
-              "location": "VerificationForSOutline.user_should_see_the_own_account_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@newAccounts"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 152632,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Uenjoy accounts verification",
-        "description": "",
-        "id": "scenario-outline-functionalities;uenjoy-accounts-verification;table-for-the-verification;4",
-        "after": [
-          {
-            "result": {
-              "duration": 106814625,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3666337426,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on the Uenjoy website",
-            "match": {
-              "location": "TopButtonRideOns.user_is_on_the_uenjoy_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 997294707,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks to the account button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_account_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 134416745,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User writes own \"bpjyk57@gmail.com\" to the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"bpjyk57@gmail.com\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_email_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 70710534,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User writes own \"fc3yr1878\" to the password box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"fc3yr1878\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_password_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1358377491,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks to the sign in button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 17834363,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should see the own account page",
-            "match": {
-              "location": "VerificationForSOutline.user_should_see_the_own_account_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@newAccounts"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 172351,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Uenjoy accounts verification",
-        "description": "",
-        "id": "scenario-outline-functionalities;uenjoy-accounts-verification;table-for-the-verification;5",
-        "after": [
-          {
-            "result": {
-              "duration": 120649761,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2612192483,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on the Uenjoy website",
-            "match": {
-              "location": "TopButtonRideOns.user_is_on_the_uenjoy_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1041390686,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks to the account button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_account_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 132295964,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User writes own \"jhkxt44@gmail.com\" to the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jhkxt44@gmail.com\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_email_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 61629830,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User writes own \"tc3ln5184\" to the password box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"tc3ln5184\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_password_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1270830640,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks to the sign in button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 11157800,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should see the own account page",
-            "match": {
-              "location": "VerificationForSOutline.user_should_see_the_own_account_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@newAccounts"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 149993,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.setup(Scenario)"
-            }
-          }
-        ],
-        "line": 18,
-        "name": "Uenjoy accounts verification",
-        "description": "",
-        "id": "scenario-outline-functionalities;uenjoy-accounts-verification;table-for-the-verification;6",
-        "after": [
-          {
-            "result": {
-              "duration": 102395535,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2717213577,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on the Uenjoy website",
-            "match": {
-              "location": "TopButtonRideOns.user_is_on_the_uenjoy_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1064613716,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User clicks to the account button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_account_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 111943271,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User writes own \"ihnnn67@gmail.com\" to the email box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"ihnnn67@gmail.com\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_email_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 65575298,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User writes own \"gm5tg6603\" to the password box",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"gm5tg6603\"",
-                  "offset": 16
-                }
-              ],
-              "location": "VerificationForSOutline.user_writes_own_to_the_password_box(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1262697762,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User clicks to the sign in button",
-            "match": {
-              "location": "VerificationForSOutline.user_clicks_to_the_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 15021789,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "User should see the own account page",
-            "match": {
-              "location": "VerificationForSOutline.user_should_see_the_own_account_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@newAccounts"
+            "name": "@Regression"
           }
         ]
       }
     ],
-    "name": "Scenario Outline functionalities",
+    "name": "Products will be listed",
     "description": "",
-    "id": "scenario-outline-functionalities",
+    "id": "products-will-be-listed",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/newAccounts.feature",
-    "tags": []
+    "uri": "src/test/resources/features/listAllProducts.feature",
+    "tags": [
+      {
+        "name": "@AllProducts",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
   }
 ]
